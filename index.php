@@ -16,11 +16,6 @@ $f3->set('DEBUG', 3);
 
 //Define a default route (home page)
 $f3->route('GET /', function() {
-
-   // echo "Pet home"; //(home page, no index.php, go to directory)
-//    $view = new Template();
-//    echo $view->render('view/home.html');
-    //echo "Pet home"; //(home page, no index.php, go to directory)
      $view = new Template();
     echo $view->render('view/home.html');
 });
