@@ -19,5 +19,11 @@
 <p>I like the color {{ @color }}</p>
 <p>Circumference: {{ 2 * @radius * 3.14 }}</p>
 
+<h3>Fruit</h3>
+<ul>
+<repeat group="{{ @fruits }}" value="{{ @fruit }}">
+    <li>{{ @fruit }}</li>
+</repeat>
+</ul>
 </body>
 </html>

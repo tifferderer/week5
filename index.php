@@ -26,6 +26,8 @@ $f3->route('GET /', function($f3) {
     $f3->set('color', 'purple');
     $f3->set('radius', 10);
 
+    $f3->set('fruits', array('apple', 'banana', 'orange', 'kiwi'));
+
 
      $view = new Template();
     echo $view->render('view/home.html');
