@@ -23,6 +23,10 @@ $f3->route('GET /', function($f3) {
     $f3->set('title', 'Working with Templates');
     $f3->set('ftemp', 67);
 
+    $f3->set('color', 'purple');
+    $f3->set('radius', 10);
+
+
      $view = new Template();
     echo $view->render('view/home.html');
 });
