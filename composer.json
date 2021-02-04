@@ -1,0 +1,13 @@
+{
+  "name": "tferdere/328/week5",
+  "authors": [
+    {
+      "name":"Tiffany Ferderer",
+      "email": "tferderer@mail.greenriver.edu"
+    }
+
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
