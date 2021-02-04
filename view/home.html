@@ -29,6 +29,9 @@
 <h3>Salary</h3>
     <repeat group="{{ @salaries }}" key="{{ @name }}" value="{{ @salary }}">
         <p>{{ @name }} earns {{ @salary}}</p>
+        <check if="{{ @salary > 150000}}">
+            <p>Wow, you're rich</p>
+        </check>
     </repeat>
 
 <h3>Desserts</h3>
@@ -37,6 +40,16 @@
     <li>{{ @food }}</li>
 </repeat>
 </ol>
+
+<h3>Conditionals</h3>
+<check if="{{ @num == 1 }}">
+    <true> <p>YES</p></true>
+    <false><p>NO</p></false>
+</check>
+
+<check if="{{ @customer }}">
+    <p>Preferred Customer status</p>
+</check>
 
 </body>
 </html>

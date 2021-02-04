@@ -32,6 +32,10 @@ $f3->route('GET /', function($f3) {
     $f3->set('salaries', getSalary());
     $f3->set('desserts', getDesserts());
 
+    $f3->set('num', 10);
+    $f3->set('customer', true);
+
+
 
      $view = new Template();
     echo $view->render('view/home.html');
