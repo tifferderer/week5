@@ -25,5 +25,18 @@
     <li>{{ @fruit }}</li>
 </repeat>
 </ul>
+
+<h3>Salary</h3>
+    <repeat group="{{ @salaries }}" key="{{ @name }}" value="{{ @salary }}">
+        <p>{{ @name }} earns {{ @salary}}</p>
+    </repeat>
+
+<h3>Desserts</h3>
+<ol>
+<repeat group="{{ @desserts }}" key="{{ @flavor }}" value="{{ @food }}">
+    <li>{{ @food }}</li>
+</repeat>
+</ol>
+
 </body>
 </html>
